@@ -5,7 +5,7 @@ import './style.css';
 
 // App setup basics
 const App = () => {
-  return <div>Hello React!</div>;
+  return <div>You've made it this far</div>;
 };
 
 // Renders the App element in the document element with the root ID
