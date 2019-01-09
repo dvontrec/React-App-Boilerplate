@@ -12,9 +12,7 @@ const config = {
     //path directory where file is saved (saves to absolute current path)
     path: path.resolve(__dirname, 'build'),
     // name of the file
-    filename: 'bundle.js',
-    // prepends url to public assets
-    publicPath: 'build/'
+    filename: 'bundle.js'
   },
   // Allows webpack to use babel loaders/rules
   module: {
@@ -31,7 +29,7 @@ const config = {
   plugins: [
     // Allows html-webpack-plugin to create a new html file from the given template
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: './src/index.html'
     })
   ]
 };
