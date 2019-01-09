@@ -1,6 +1,7 @@
 // File needed to setup webpack for project
-
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 // Create a config object
 const config = {
   // Requires 2 min properties
@@ -26,7 +27,13 @@ const config = {
         test: /\.js$/
       }
     ]
-  }
+  },
+  plugins: [
+    // Allows html-webpack-plugin to create a new html file from the given template
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    })
+  ]
 };
 
 // Export config object
