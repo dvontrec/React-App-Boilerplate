@@ -2,7 +2,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // list of dependencies should be altered as more are added
-const VENDER_LIBS = ['react', 'react-dom'];
+const VENDER_LIBS = [
+  'react',
+  'react-dom',
+  'react-redux',
+  'react-router-dom',
+  'redux',
+  'redux-thunk'
+];
 
 // Create a config object
 const config = {
