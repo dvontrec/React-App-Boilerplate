@@ -23,6 +23,26 @@ const config = {
         use: 'babel-loader',
         // Looks for js files and applies babel
         test: /\.js$/
+      },
+      // Use css / style loader to add css files
+      {
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            // adds options to make css modular (local scoped classes and only to component in question)
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: '[name]_[local]_[hash:base64]',
+              sourceMap: true
+            }
+          }
+        ],
+        // looks for files ending in css
+        test: /\.css$/
       }
     ]
   },
