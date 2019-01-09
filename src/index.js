@@ -1,7 +1,7 @@
 // Basics for react app rendering
 import React from 'react';
 import ReactDom from 'react-dom';
-import style from './style.css';
+import './style.css';
 
 // App setup basics
 const App = () => {
