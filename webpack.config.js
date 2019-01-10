@@ -69,7 +69,18 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        node_venders: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          priority: 1
+        }
+      }
+    }
+  }
 };
 
 // Export config object
