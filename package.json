@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf build",
     "start": "webpack-dev-server --mode development --open",
-    "build": "npm run clean && webpack --mode production"
+    "build": "NODE_ENV=production npm run clean && webpack --mode production"
   },
   "keywords": [],
   "author": "",

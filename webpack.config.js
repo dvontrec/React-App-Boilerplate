@@ -1,4 +1,5 @@
 // File needed to setup webpack for project
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // list of dependencies should be altered as more are added
@@ -63,6 +64,10 @@ const config = {
     // Allows html-webpack-plugin to create a new html file from the given template
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    // Checks for the NODE ENV to stop / stop error checking
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ]
 };
