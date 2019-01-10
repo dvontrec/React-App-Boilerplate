@@ -5,5 +5,8 @@ A Simple webpack boilerplate ready for development of new react apps
 ## Instructions
 
 1. Clone / download the repo
-2. Run npm install to download all dependencies
-3. Run npm start to open a live reloading version at localhost:8080
+2. Change name of project in package.json
+3. If Creating new repo Remove current .git folder (removes me from contributors)
+4. Run *git init*
+4. Run *npm install* to download all dependencies
+5. Run *npm start* to open a live reloading version at localhost:8080
