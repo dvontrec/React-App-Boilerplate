@@ -1,5 +1,6 @@
 // File needed to setup webpack for project
 const webpack = require('webpack');
+const WebpackBar = require('webpackbar');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // list of dependencies should be altered as more are added
@@ -68,7 +69,8 @@ const config = {
     // Checks for the NODE ENV to stop / stop error checking
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
+    }),
+    new WebpackBar()
   ],
   optimization: {
     splitChunks: {
