@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1547654302750" clover="3.2.0">
+  <project timestamp="1547654302750" name="All files">
+    <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3" elements="8" coveredelements="6" complexity="0" loc="4" ncloc="4" packages="1" files="4" classes="4">
+      <file name="App.js" path="/Users/dvontrecoleman/Documents/webpack/react-skeleton/src/components/App.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+      </file>
+      <file name="Away.js" path="/Users/dvontrecoleman/Documents/webpack/react-skeleton/src/components/Away.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="Home.js" path="/Users/dvontrecoleman/Documents/webpack/react-skeleton/src/components/Home.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="Nav.js" path="/Users/dvontrecoleman/Documents/webpack/react-skeleton/src/components/Nav.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>
