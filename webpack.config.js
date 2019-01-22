@@ -29,6 +29,16 @@ const config = {
     // name of the file with a hash for cache
     filename: '[name].[chunkhash].js'
   },
+  // Adds dev server config
+  devServer: {
+    contentBase: path.join(__dirname, '../build/'),
+    host: 'localhost',
+    disableHostCheck: true,
+    open: true,
+    // Uncomment to access from nginx deveopment docket file on port 8081
+    // public: '0.0.0.0:8081',
+    port: 8080
+  },
   // Allows webpack to use babel loaders/rules
   module: {
     // Rules for when to use loaders
